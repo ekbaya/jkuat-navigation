@@ -12,6 +12,7 @@ import 'package:jkuat_navigation/widgets/mainDrawer.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 import '../controllers/authController.dart';
+import '../indoor/indoor_home.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -124,7 +125,7 @@ class _HomePageState extends State<HomePage> {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => const HomePage(),
+                builder: (context) => const IndoorHomePage(),
               ),
             );
           }

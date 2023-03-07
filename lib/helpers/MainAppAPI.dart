@@ -101,6 +101,8 @@ class MainAppAPI {
       durationText: resp["routes"][0]["legs"][0]["duration"]["text"],
       encodedPoints: resp["routes"][0]["overview_polyline"]["points"],
     );
+    AlanVoice.playText('Distance remaining to destination is ${directionDetail.distanceText}Arriving  in Destination in${directionDetail.durationText}');
+
 
     if (directionDetail.distanceValue < 0.1) {
       AlanVoice.playText('You have reached your destination');

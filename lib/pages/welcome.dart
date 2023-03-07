@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jkuat_navigation/pages/registration.dart';
+import 'package:permission_handler/permission_handler.dart';
 
 import 'login.dart';
 
@@ -11,6 +12,14 @@ class WelcomePage extends StatefulWidget {
 }
 
 class _WelcomePageState extends State<WelcomePage> {
+  // @override
+  // Future<void> initState() async {
+  //   // TODO: implement initState
+  //   Map<Permission, PermissionStatus> statuses = await [
+  //   Permission.location
+  //   ].request();
+  // }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
